@@ -9,13 +9,13 @@ import javax.persistence.Table;
 
 @Table(name = "tbl_centros")
 @Entity
-public class Centre {
+public class Center {
 
 	//--------------------------------------------Properties----------------------------------------
 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	@Id
-	private int id;
+	private Integer id;
 	
 	@Column(name="nombre")
 	private String name;
@@ -57,11 +57,11 @@ public class Centre {
 	
 	//--------------------------------------------Constructors---------------------------------------
 
-	public Centre() {
+	public Center() {
 		
 	}
 	
-	public Centre(String name, String email, String tel, String address, String description, String equipment,
+	public Center(String name, String email, String tel, String address, String description, String equipment,
 			String access, String schedule, Boolean active, String lat, String lng, String path, String file,
 			String media) {
 		this.name = name;
