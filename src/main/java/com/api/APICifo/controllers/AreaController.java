@@ -21,10 +21,10 @@ public class AreaController {
 		return areaService.getAreas();
 	}
 	
-	/*@GetMapping("/api.cifo/areas/{id}")
+	@GetMapping("/api.cifo/areas/{id}")
 	public Area getAreaById(@PathVariable Integer id) {
 		return areaService.getAreaById(id);
-	}*/
+	}
 	
 	/*@GetMapping("/api.cifo/areas")
 	public ResponseEntity<Object> getAreas(){
