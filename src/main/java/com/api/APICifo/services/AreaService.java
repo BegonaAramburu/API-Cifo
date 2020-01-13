@@ -22,7 +22,7 @@ public class AreaService {
 	}
 	
 	//get area by id
-	/*public Area getAreaById(Integer id) {
+	public Area getAreaById(Integer id) {
 		Area area = null;
 		Optional<Area> areaOptional = areaRepository.findById(id);
 		if(areaOptional.isPresent()) {
@@ -31,7 +31,7 @@ public class AreaService {
 			System.out.println("Area not found");
 		}
 		return area;
-	}*/
+	}
 	
 		
 	
