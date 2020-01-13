@@ -41,7 +41,7 @@ public class Offer {
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="id_centros")
-	private Centre centre;
+	private Center centre;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="id_cursos")
@@ -54,7 +54,7 @@ public class Offer {
 	}
 
 	public Offer(String offerCode, Date startDate, Date endDate, String schedule, int places, Boolean active,
-			Centre centre, Course course) {
+			Center centre, Course course) {
 		this.offerCode = offerCode;
 		this.startDate = startDate;
 		this.endDate = endDate;
@@ -123,11 +123,11 @@ public class Offer {
 		this.active = active;
 	}
 
-	public Centre getCentre() {
+	public Center getCentre() {
 		return centre;
 	}
 
-	public void setCentre(Centre centre) {
+	public void setCentre(Center centre) {
 		this.centre = centre;
 	}
 
