@@ -20,7 +20,7 @@ public class Offer {
 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	@Id
-	private int id;
+	private Integer id;
 	
 	@Column(name="codigoferta")
 	private String offerCode;
